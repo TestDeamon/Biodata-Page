@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Survey Page &mdash; Database</title>
+	<link rel="stylesheet" href="css/style.css">
+
+	<!--to be fixed-->
+	<link rel="shortcut icon" href="favicon.ico" type="image/png">
+</head>
+<body>
+	<div class="container">
+
+		<div class="form-box">
+			<form action="#" id="survey-form">
+				<h1 id="title">Biodata</h1>
+				<p id="description">Please carefully fill the form</p>
+				<div class="form__group">
+					<label for="name-label">Name</label>
+					<input type="text" name="name" id="name-label" placeholder="Enter name" required>
+				</div>
+				<div class="form__group">
+					<label for="email-label">Email</label>
+					<input type="email" name="email" id="email-label" placeholder="Enter email address" required>
+				</div>
+				<div class="form__group">
+					<label for="number-label">How many child(s) do you have?</label>
+					<input type="number" name="number" id="number-label" minlength="0" maxlength="4" placeholder="Enter number of chidren" required>
+				</div>
+				<div class="form__group">
+					<label for="dropdown">Choose Qualification</label>
+					<select name="qualification" id="dropdown">
+						<option value="nce" selected>NCE</option>
+						<option value="nde">NDE</option>
+						<option value="hnd">HND</option>
+						<option value="bsc">B.Sc</option>
+						<option value="Masters">Masters</option>
+					  </select>
+				</div>
+				<div class="form__group">
+					<label for="comment-section">Comment</label>
+					<textarea name="comment" id="comment-section" cols="10" rows="8" class="textarea" placeholder="Enter comments">
+	
+					</textarea>
+				</div>
+	
+				<div class="submit-div">
+					<button type="submit" id="submit">Submit</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</body>
+</html>
